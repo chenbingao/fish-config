@@ -18,11 +18,6 @@ function unsetproxy
     set -e HTTPS_PROXY
     set -e ALL_PROXY
 end
-
-# minikube kubectl
-function kubectl
-    minikube kubectl -- $argv
-end
 # === alias end ========================
 
 # === env start ========================
