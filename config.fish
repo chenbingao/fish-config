@@ -3,6 +3,11 @@ if status is-interactive
 end
 
 # === alias start ======================
+# microk8s
+function kubectl
+    microk8s kubectl $argv
+end
+
 # proxy
 function setproxy
     export http_proxy=socks5h://10.10.10.222:10080
@@ -28,6 +33,10 @@ export BROWSER=/usr/bin/firefox
 export PATH="$HOME/.cargo/bin:$PATH"
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+
+# go env
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 
 # jetbrain ide env
 export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
