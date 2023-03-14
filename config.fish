@@ -3,11 +3,6 @@ if status is-interactive
 end
 
 # === alias start ======================
-# microk8s
-function kubectl
-    microk8s kubectl $argv
-end
-
 # proxy
 function setproxy
     export http_proxy=socks5h://10.10.10.222:10080
